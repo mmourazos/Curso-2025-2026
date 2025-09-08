@@ -1,0 +1,5 @@
+Mi primera página web (HTML)					https://www.manualweb.net/html/mi-primera-pagina-html/
+Aprende HTML y CSS - Curso Desde Cero				https://www.freecodecamp.org/espanol/news/aprende-html-y-css-curso-desde-cero/
+Tutorial paso a paso para elaborar un formulario HTML		https://www.freecodecamp.org/espanol/news/como-construir-una-forma-de-registro-con-etiquetas-flotantes-y-transiciones-usando-solamente/
+¿Qué Es el HTML Semántico?					https://es.semrush.com/blog/html-semantico/
+w3schools							https://es.semrush.com/blog/html-semantico/

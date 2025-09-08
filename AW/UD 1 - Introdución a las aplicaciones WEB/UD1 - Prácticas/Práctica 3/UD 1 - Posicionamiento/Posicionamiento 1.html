@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Posicionamiento 1</title>
+  <style>
+  .box{border:2px dotted black;}
+  .box::after{clear:both; content:''; display:block;}
+  .box>div{width:calc(100% / 3); height:480px; box-sizing:border-box; float:left;}
+    .box1{background-color:blue;}
+    .box2{background-color:white;}
+    .box3{background-color:red;}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </div>
+</body>
+</html>

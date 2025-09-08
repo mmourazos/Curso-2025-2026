@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo uso del elemento div y del atributo id</title>
+    <style>
+	    a:link, a:visited, a:hover, a:active {
+        color:#0f0;
+        font-size:16px;
+      }
+      body {
+        background:#eee;
+        font-family:verdana;
+      }
+      h1 {
+        color:#c0c;
+        font-size:24px;
+      }
+      p {
+        font-size:16px;
+      }
+      ul {
+        list-style-type:none;
+      }
+        
+      #cabecera {
+        color:#ff9;
+        background-color:#000;
+        padding:10px; /* anchura de las zonas de relleno del elemento */
+	 
+      }
+	  #contenedor {
+        margin:0 auto; /* márgenes verticales y horizontales */
+        width:800px;   /* ancho del contenedor; como los márgenes derecho e izquierdo son auto, 
+						   se centra de manera horizontal en su contenedor (en este caso el body),
+						   lo que implica que se centra respecto de la ventana del navegador.
+						   El elemento toma el ancho que se especifica, después el espacio
+						   sobrante se divide equitativamente entre los dos márgenes.
+                           En width, si utilizamos %, la anchura se adapta a la anchura de la ventana
+                           del navegador.*/
+	  }
+      #contenido {
+        background-color:#ddd;
+        float:right;   /* Posicionamiento flotante: la caja o contenedor se convierte en una caja flotante,
+						   lo que significa que se desplaza hasta la zona más a la izquierda o más a la derecha
+						   de la posición en la que originalmente se encontraba. Flota para ocupar una posición 
+						   dentro de un contenedor.
+						   left: la caja se desplaza hasta el punto más a la izquierda posible en esa misma
+						   línea (si no existe sitio en esa línea, la caja baja una línea y se muestra lo más
+						   a la izquierda posible en esa nueva línea). El resto de elementos adyacentes se 
+						   adaptan y fluyen alrededor de la caja flotante.*/
+        height:500px;
+        padding:10px;
+        width:560px;
+      }
+      #menu {
+        background-color:#999;
+        float:left;
+        height:480px;
+        padding:20px;
+        width:180px;
+	  }
+      #pie { 
+        background-color:#bbb;
+        clear:both; /* rompe el esquema de orden para los elementos con float */
+        color:#900;
+        padding:10px;
+        text-align:center;
+      }  
+    </style>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="cabecera">
+        <p>Párrafo en la cabecera de la página.</p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="enlace-1.html">Enlace 1</a></li>
+          <li><a href="enlace-2.html">Enlace 2</a></li>
+          <li><a href="enlace-3.html">Enlace 3</a></li>
+        </ul>
+      </div>
+      <div id="contenido">
+        <h1>Elemplo: Uso del elemento &quot;div&quot; y del atributo <i>id</i></h1>
+      </div>
+      <div id="pie">
+        <p>Párrafo en el pie de la página.</p>
+      </div>
+    </div>
+  </body>
+</html>

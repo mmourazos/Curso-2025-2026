@@ -1,0 +1,6 @@
+Validador de páginas web							https://validator.w3.org/
+Pattern HTML5 (patrones)							https://www.html5pattern.com/
+Paleta de cores									https://www.w3schools.com/colors/colors_picker.asp
+Ejercicios básicos de elaboración de formularios con HTML			https://oscarmaestre.github.io/lenguajes_marcas/ejercicios/formularios/anexo_formularios.html#formulario-15
+Prototipo de interfaz de usuario: qué es y qué herramientas hay para crearlo	https://cl.godaddy.com/blog/prototipo-interfaz-usuario-definicion-herramientas/
+Introducción sencilla al empleo de JavaScript mediante onclick			https://www.freecodecamp.org/espanol/news/boton-html-onclick-tutorial-de-evento-de-clic-en-javascript/
