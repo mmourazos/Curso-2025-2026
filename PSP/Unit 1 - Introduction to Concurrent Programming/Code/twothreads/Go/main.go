@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	//	"sync"
+	//"sync"
 	"time"
 )
 
@@ -24,6 +24,6 @@ func main() {
 
 	// We wait for both goroutines to finish:
 	// wg.Wait()
-	
+
 	select {}
 }

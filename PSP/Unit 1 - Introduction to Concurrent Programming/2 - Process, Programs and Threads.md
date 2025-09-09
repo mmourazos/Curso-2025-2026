@@ -3,12 +3,14 @@
 <!-- toc -->
 
 - [Processes and Programs](#processes-and-programs)
-- [Concurrent vs parallel programming](#concurrent-vs-parallel-programming)
+- [Concurrent vs Parallel Programming](#concurrent-vs-parallel-programming)
     * [Motivation](#motivation)
-    * [IPC (inter-process communication)](#ipc-inter-process-communication)
+    * [Inter-process Communication (IPC)](#inter-process-communication-ipc)
 - [Services and Threads](#services-and-threads)
     * [Single-threaded process](#single-threaded-process)
     * [Multi-threaded process](#multi-threaded-process)
+    * [Services](#services)
+    * [Threads vs processes](#threads-vs-processes)
 
 <!-- tocstop -->
 
@@ -24,7 +26,7 @@ Every time you run a program the system starts a new process. Each process is in
 
 A **thread** is the smallest unit of execution within a process. A process can have multiple threads, which **share the same memory space and resources of the parent process**. Threads are used to perform tasks concurrently within a process, allowing for more efficient use of system resources.
 
-## Concurrent vs parallel programming
+## Concurrent vs Parallel Programming
 
 **Concurrent** programming means that, give a length of time, multiple tasks can make progress simultaneously. This does **not necessarily** mean that they are **executing at the same time**, but rather that they are being managed in a way that allows them to share resources and time effectively.
 
@@ -40,7 +42,7 @@ The primary motivation for concurrent programming is to improve the responsivene
 
 We will list all the improvements that concurrency brings in the following points:
 
-- Optimization in the use of CPU and other resources. While a process is performing I/O operations (like reading from a file or waiting for network access), other processes can use the CPU to perform computations. This leads to better utilization of system resources and improved overall performance.
+- Optimices the use of CPU and other resources. While a process is performing I/O operations (like reading from a file or waiting for network access), other processes can use the CPU to perform computations. This leads to better utilization of system resources and improved overall performance.
 - Provides interactivity to the user. In a concurrent system, the user interface can remain responsive while background tasks are being executed. This is particularly important in applications that require real-time interaction, such as video games or multimedia applications.
 - Improves responsiveness. A server, due to concurrency, can handle multiple client requests simultaneously, reducing wait times and improving the overall user experience.
 - Allows for a more comprehensive design of complex systems. Complex systems often involve multiple components that need to interact with each other. Concurrency allows these components to operate independently, making it easier to design and maintain the system.
@@ -48,7 +50,7 @@ We will list all the improvements that concurrency brings in the following point
 
 On top of this, current technology trends are pushing towards multi-core processors and distributed computing, making concurrency a fundamental aspect of modern software development. If we want to take advantage of the available hardware, we need to design our applications to be concurrent.
 
-### IPC (inter-process communication)
+### Inter-process Communication (IPC)
 
 When we have multiple processes running concurrently, they may need to communicate with each other to share data or coordinate their actions. This is known as **inter-process communication (IPC)**.
 
@@ -105,7 +107,7 @@ package main
 
 import (
  "fmt" // Package for formatted I/O.
- "time" // Package for measuring and displaying time.
+ "time" // Package for measuring and displaying time (includes Sleep function).
 )
 
 // We define a function that print numbers from 1 to 5 (one number each second) and we _give it_ a name to be able to distinguish between the two threads.
@@ -126,4 +128,12 @@ func main() {
  // Prevent main from exiting
  select {}
 }
+```
 
+### Services
+
+A service is a process which runs in the background and performs a specific task. Services are typically used to provide functionality to other processes or to the system as a whole. They can be started automatically when the system boots up, and they can run continuously in the background without user intervention.
+
+Services do not usually interact directly with the user, but they can provide functionality that is used by other processes or applications. For example, a web server is a service that provides web pages to users when they request them via a web browser.
+
+### Threads vs processes
