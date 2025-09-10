@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Markdown</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="modest.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#apuntes-de-markdown" id="toc-apuntes-de-markdown">Apuntes
+de markdown</a>
+<ul>
+<li><a href="#origen-de-markdown" id="toc-origen-de-markdown">Origen de
+Markdown</a></li>
+<li><a href="#estructura-básica" id="toc-estructura-básica">Estructura
+básica</a></li>
+<li><a href="#conversión-a-html" id="toc-conversión-a-html">Conversión a
+HTML</a>
+<ul>
+<li><a href="#pandoc" id="toc-pandoc"><code>Pandoc</code></a></li>
+</ul></li>
+<li><a href="#ejercicio" id="toc-ejercicio">Ejercicio</a>
+<ul>
+<li><a href="#apartado-1" id="toc-apartado-1">Apartado 1</a></li>
+<li><a href="#apartado-2" id="toc-apartado-2">Apartado 2</a></li>
+<li><a href="#apartado-3" id="toc-apartado-3">Apartado 3</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="apuntes-de-markdown">Apuntes de markdown</h1>
+<h2 id="origen-de-markdown">Origen de Markdown</h2>
+<p>El lenguaje de marcado Markdown fue creado por John Gruber en 2004,
+con la colaboración de Aaron Swartz. La idea principal detrás de
+Markdown era crear un lenguaje de marcado que fuera fácil de leer y
+escribir en su forma original, y que pudiera convertirse fácilmente en
+HTML para su publicación en la web.</p>
+<p>Cuando se refieren a que es fácil de leer y escribir, significa que
+es fácil interpretar lo que se quiere expresar sin necesidad de ver la
+representación <em>renderizada</em> (por ejemplo, en HTML). Esto es
+especialmente útil para escritores y desarrolladores que desean
+centrarse en el contenido sin preocuparse demasiado por la
+presentación.</p>
+<p>Un ejemplo de código markdown (además de este propio texto) es el
+siguiente:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Título de nivel 1</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Un párrafo de texto con **negrita** (`**negrita**`) y *cursiva* (`*cursiva*`) (también se puede usar `_` y  `__` en lugar de `*` pero **hay que ser consistente**).</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sección/título de nivel 2</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Una lista no ordenada:</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Hay que preceder.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Cada elemento.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>De un <span class="in">`*`</span>.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Una lista ordenada:</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>primer elemento.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>segundo elemento.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>tercer elemento.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>No es necesario que los números sean consecutivos, el renderizador se encarga de eso.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>etc.</span></code></pre></div>
+<h2 id="estructura-básica">Estructura básica</h2>
+<p>La estructura básica de un documento en Markdown incluye:</p>
+<ul>
+<li>Los títulos y subtítulos, que se crean utilizando el símbolo
+<code>#</code> seguido de un espacio y el texto del título. El número de
+<code>#</code> indica el nivel del título (por ejemplo, <code>#</code>
+para el nivel 1, <code>##</code> para el nivel 2, etc.).</li>
+<li>Las listas, que pueden ser ordenadas (numeradas) o no ordenadas (con
+viñetas). Las listas no ordenadas se crean utilizando <code>*</code>,
+<code>-</code> o <code>+</code> seguido de un espacio y el texto del
+elemento de la lista. Las listas ordenadas se crean utilizando números
+seguidos de un punto y un espacio.</li>
+<li>Los párrafos, que se crean simplemente escribiendo el texto sin
+ningún símbolo especial. Los párrafos se separan por una línea en
+blanco.</li>
+<li>Las negritas y cursivas, que se crean utilizando <code>**</code> o
+<code>__</code> para negritas y <code>*</code> o <code>_</code> para
+cursivas.</li>
+<li>Los enlaces, que se crean utilizando el formato
+<code>[texto del enlace](URL)</code>.</li>
+<li>Las imágenes, que se crean utilizando el formato
+<code>![texto alternativo](URL de la imagen)</code>.</li>
+</ul>
+<p>Además de estos elementos básicos, Markdown también soporta otros
+elementos como citas, bloques de código, tablas, etc.</p>
+<h2 id="conversión-a-html">Conversión a HTML</h2>
+<h3 id="pandoc"><code>Pandoc</code></h3>
+<p>Pandoc es una herramienta de conversión de documentos que puede
+convertir archivos en formato Markdown a HTML y muchos otros formatos.
+Es una herramienta de línea de comandos que se puede instalar en la
+mayoría de los sistemas operativos.</p>
+<p>Para instalar Pandoc en nuestro sistema:</p>
+<ul>
+<li>En Windows (una vez instalado <a
+href="https://scoop.sh/">scoop</a>):
+<code>scoop install pandoc</code>.</li>
+<li>En Linux (Debian/Ubuntu): <code>sudo apt install pandoc</code>.</li>
+</ul>
+<p>Para convertir un archivo Markdown a HTML, se puede utilizar el
+siguiente comando en la terminal:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="at">--css</span><span class="op">=</span>styling.css <span class="at">-s</span> <span class="at">-f</span> markdown+smart <span class="at">--toc</span> <span class="at">--metadata</span> <span class="dt">\ </span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="va">pagetitle</span><span class="op">=</span><span class="st">&quot;awesome ldap&quot;</span> <span class="ex">--to=html5</span> README.md <span class="dt">\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>-o index.html</span></code></pre></div>
+<p>Analicemos el comando anterior:</p>
+<ul>
+<li><code>pandoc</code>: es el comando para ejecutar la herramienta
+Pandoc.</li>
+<li><code>--css=styling.css</code>: especifica una hoja de estilos CSS
+para aplicar al fichero HTML generado.</li>
+<li><code>-s</code>: indica que se debe generar un documento HTML
+completo (con encabezado y cuerpo).</li>
+<li><code>-f markdown+smart</code>: especifica el formato de entrada, en
+este caso Markdown.</li>
+<li><code>-pagetitle</code>: especifica el título de la página
+HTML.</li>
+<li><code>--toc</code>: genera una tabla de contenidos basada en los
+títulos del documento.</li>
+<li><code>--to=html5</code>: especifica el formato de salida, en este
+caso HTML5.</li>
+<li><code>-o index.html</code>: especifica el nombre del archivo de
+salida.</li>
+<li><code>README.md</code>: es el archivo de entrada en formato
+Markdown.</li>
+</ul>
+<p>Busquemos ahora una hoja de estilos CSS sencilla para aplicar al
+fichero HTML generado. Uno de los primeros resultados que aparecen en
+Google es <a href="https://markdowncss.github.io">esta página de
+github</a>.</p>
+<p>Yo he elegido el estilo <em>Modest</em> cuyo css se encuentra en el
+siguiente <a
+href="https://github.com/markdowncss/modest/blob/master/css/modest.css">enlace</a>.</p>
+<p>Una vez descargado el fichero <code>modest.css</code> lo colocamos en
+el mismo directorio que el fichero markdown que queremos convertir, por
+ejemplo este mismo documento <code>Markdown.md</code>.</p>
+<p>Y ejecutamos el comando:</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="at">--css</span><span class="op">=</span>modest.css <span class="at">-s</span> <span class="at">-f</span> markdown+smart <span class="at">--toc</span> <span class="at">--metadata</span> <span class="at">-pagetitle</span><span class="op">=</span><span class="st">&quot;Ejemplo markdown&quot;</span> <span class="at">--to</span><span class="op">=</span>html5 ejemplo.md <span class="at">-o</span> ejemplo.html</span></code></pre></div>
+<h2 id="ejercicio">Ejercicio</h2>
+<h3 id="apartado-1">Apartado 1</h3>
+<p>Usando el editor de código VSCode, crea un archivo con extensión
+<code>.md</code> y escribe un documento que incluya los elementos
+básicos mencionados anteriormente. Luego, utiliza la función de vista
+previa de VSCode para ver cómo se renderiza tu documento en HTML.</p>
+<p>Comprueba que si incluyes una imagen esta puede estar asociada a un
+fichero local o a una URL externa.</p>
+<h3 id="apartado-2">Apartado 2</h3>
+<p>Incluye ahora en tu documento una tabla y un bloque de código.
+Asegúrate de que ambos se renderizan correctamente en la vista previa de
+VSCode.</p>
+<h3 id="apartado-3">Apartado 3</h3>
+<p>Convierte el documento a HTML utilizando una herramienta en línea o
+un programa de conversión de Markdown a HTML. Compara el resultado con
+la vista previa de VSCode para asegurarte de que todo se ha convertido
+correctamente.</p>
+</body>
+</html>
