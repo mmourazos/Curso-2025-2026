@@ -22,5 +22,3 @@
 | 18:30-19:20 |             | PSP TC (MD DAM B) A-1 |             |             |             |
 | 19:20-20:10 |             | Inglés (MD ASIR A) A-23 |             |             |             |
 | 20:10-21:00 |             | Inglés (MD ASIR B) A-23 |             |             |             |
-
-

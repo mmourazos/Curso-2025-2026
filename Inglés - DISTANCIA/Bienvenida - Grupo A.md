@@ -26,3 +26,5 @@ Although remote access is preferable you could come to the tutoring sessions in 
 We will always use the same link to join the collective tutoring sessions:
 
 * [Link to the collective tutoring sessions](https://meet.google.com/kkv-rsxh-wgf).
+
+If you have any questions, please feel free to contact me through the forum or via message.
