@@ -25,5 +25,8 @@ func main() {
 	// We wait for both goroutines to finish:
 	// wg.Wait()
 
+	// In the next line we are writing a print statement.
+	fmt.Print("Hola", "mundo.")
+
 	select {}
 }
