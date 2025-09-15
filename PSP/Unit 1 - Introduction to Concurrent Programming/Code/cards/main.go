@@ -2,14 +2,34 @@ package main
 
 import (
 	"fmt"
-	"time"
+
+	"example/cards/deck"
 )
 
-func main() {
-	card := "Ace of Spades"
+type Coords [2]int
 
-	for range 5 {
-		time.Sleep(3 * time.Second)
-		fmt.Println(card)
-	}
+func (c Coords) printCoords() {
+	fmt.Printf("(%d, %d)\n", c[0], c[1])
+}
+
+func (x Coords) sum(y Coords) Coords {
+	r := Coords{x[0] + y[0], x[1] + y[1]}
+	return r
+}
+
+func main() {
+	deck := deck.NewDeck()
+
+	deck.Print()
+
+	a := Coords{10, 20}
+
+	b := Coords{30, 40}
+
+	a.printCoords()
+	b.printCoords()
+
+	c := a.sum(b)
+
+	c.printCoords()
 }

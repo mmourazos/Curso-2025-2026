@@ -1,5 +1,33 @@
 # Go
 
+<!-- toc -->
+
+- [Learning Resources](#learning-resources)
+- [Code organization](#code-organization)
+- [Running code](#running-code)
+    * [Visibility](#visibility)
+- [Basic syntax](#basic-syntax)
+- [Variables](#variables)
+    * [Data types](#data-types)
+        + [Basic data types](#basic-data-types)
+    * [Data structures](#data-structures)
+        + [Arrays](#arrays)
+        + [Slices](#slices)
+        + [Maps](#maps)
+    * [Objects in Go](#objects-in-go)
+- [Flow control](#flow-control)
+    * [Conditionals](#conditionals)
+        + [`if`](#if)
+        + [`switch`](#switch)
+    * [Loops](#loops)
+        + [C-style](#c-style)
+        + [While-style](#while-style)
+        + [Loop over a collection](#loop-over-a-collection)
+- [Functions](#functions)
+    * [Function arguments](#function-arguments)
+
+<!-- tocstop -->
+
 Go is a programming language that was originally designed to solve various problems in large-scale software development in the real world, initially within Google. It addresses slow program construction, out-of-control dependency management, complex code, and difficult cross-language
 construction.
 
@@ -17,8 +45,8 @@ Go was designed with simplicity and productivity in mind, making it a natural fi
 
 What follows is a list of resources where you can learn Go.
 
-* [Go by example](http://gobyexample.com).
-* [Efective Go](https://go.dev/doc/effective_go).
+- [Go by example](http://gobyexample.com).
+- [Efective Go](https://go.dev/doc/effective_go).
 
 ## Code organization
 
@@ -72,9 +100,9 @@ In any case, this only matters when we are using multiple packages. In a single 
 
 ## Basic syntax
 
-* `;` at the end of the line is optional. The Go compiler automatically inserts semicolons at the end of lines.
-* Code blocks are defined using `{}`.
-* Tabs are used for indentation. Spaces are not allowed for indentation.
+- `;` at the end of the line is optional. The Go compiler automatically inserts semicolons at the end of lines.
+- Code blocks are defined using `{}`.
+- Tabs are used for indentation. Spaces are not allowed for indentation.
 
 ## Variables
 
@@ -121,8 +149,8 @@ bigger = 3 > 2 // true
 
 Numeric types are further divided into integer and floating-point types:
 
-* `int`: Integer type.
-* `float32` and `float64`: Real number types single or double precision.
+- `int`: Integer type.
+- `float32` and `float64`: Real number types single or double precision.
 
 ```Go
 var i int
@@ -154,7 +182,71 @@ pi := 3.14 // float
 
 ### Data structures
 
-<!-- TODO: Add content to data structures. -->
+We will be adding more data structures as we need them. For now, we will see the most basic ones: arrays, slices, and maps.
+
+#### Arrays
+
+An array is a collection of elements of the same type. The size of the array is fixed and cannot be changed.
+
+```Go
+var a [5]int // Array of 5 integers
+```
+
+We can create and initialize an array in the same line:
+
+```Go
+a := [5]int{1, 2, 3, 4, 5}
+```
+
+We need to make it clear that the size of the array is part of its type. So, `[5]int` and `[10]int` are two different types.
+
+#### Slices
+
+Slices are like arrays, but they are more flexible. The size of a slice can change dynamically. Slices are built on top of arrays and provide a more powerful interface to work with sequences of data.
+
+```Go
+var s []int // Slice of integers
+
+s = append(s, 1) // We can add elements to the slice using the append function.
+```
+
+We can create and initialize a slice in the same line:
+
+```Go
+s := []int{1, 2, 3, 4, 5}
+```
+
+We can create a slice from an array:
+
+```Go
+a := [5]int{1, 2, 3, 4, 5}
+
+s := a[1:4] // Slice from index 1 to 3 (4 is not included)
+
+fmt.Println(s) // [2 3 4]
+```
+
+#### Maps
+
+Go maps are unordered collections of key-value pairs. The keys are unique and can be of any type that is comparable. The values can be of any type.
+
+```Go
+var m map[string]int // Map with string keys and int values
+
+m["one"] = 1 
+```
+
+As before, we can create and initialize a map in the same line:
+
+```Go
+m := map[string]int{
+    "one": 1,
+    "two": 2,
+    "three": 3,
+}
+```
+
+That will be all for now.
 
 ### Objects in Go
 
@@ -225,9 +317,9 @@ Go has only one looping construct, the `for` loop. This `for` loop can be used i
 
 This for loop works similarly to the Java for loop. We have an initialization statement, a condition, and a post statement.
 
-* Initialization statement: executed before the first iteration `i := 0`.
-* Condition: evaluated before each iteration, `i < 10`, to determine if the loop should continue.
-* Post statement: executed at the end of each iteration `++i`.
+- Initialization statement: executed before the first iteration `i := 0`.
+- Condition: evaluated before each iteration, `i < 10`, to determine if the loop should continue.
+- Post statement: executed at the end of each iteration `++i`.
 
 ```Go
 for i := 0; i < 10; ++i {

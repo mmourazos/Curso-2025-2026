@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="105.08532mm"
+   height="76.904282mm"
+   viewBox="0 0 148.54949 108.71254"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e94, 2025-05-08)"
+   sodipodi:docname="concurrency.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0453214"
+     inkscape:cx="619.42669"
+     inkscape:cy="414.70498"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="148.5495"
+       height="108.71253"
+       id="page69"
+       margin="3.5340211"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         sodipodi:nodetypes="sssss"
+         id="path17" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(199.92373,64.145786)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.7658px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Bold';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.148931"
+       x="-189.08044"
+       y="-46.102856"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.7658px;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Bold';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.148931"
+         x="-189.08044"
+         y="-46.102856">Tiempo</tspan></text>
+    <path
+       style="fill:#00aad4;fill-opacity:1;stroke:#00aad4;stroke-width:2.25155;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m -189.20737,-42.072442 v 75.10976"
+       id="path1" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.36864px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.148931"
+       x="-161.39558"
+       y="-51.394527"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="stroke-width:0.148931"
+         x="-161.39558"
+         y="-51.394527">Concurrencia</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.68867;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot)"
+       d="m -161.42866,-39.341056 c -0.55154,-0.550898 0,77.015434 0,77.015434"
+       id="path11" />
+    <g
+       id="g58"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.28903,-77.779148)">
+      <rect
+         style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect11"
+         width="32.083607"
+         height="16.21102"
+         x="54.772041"
+         y="79.152687" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.264582"
+         x="63.812607"
+         y="88.521271"
+         id="text12"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           id="tspan12"
+           style="text-align:start;text-anchor:start;stroke-width:0.264582"
+           x="63.812607"
+           y="88.521271">Task 1</tspan></text>
+    </g>
+    <g
+       id="g59"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.28903,-77.779148)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect12"
+         width="32.083607"
+         height="16.21102"
+         x="54.772041"
+         y="96.418259" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="71.358696"
+         y="105.6965"
+         id="text13"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="71.358696"
+           y="105.6965"
+           id="tspan14">Task 2</tspan></text>
+    </g>
+    <g
+       id="g60"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.28903,-77.779148)">
+      <rect
+         style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect16"
+         width="32.083607"
+         height="26.607744"
+         x="54.772041"
+         y="113.46603" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.264582"
+         x="63.812607"
+         y="127.82621"
+         id="text16"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           id="tspan16"
+           style="text-align:start;text-anchor:start;stroke-width:0.264582"
+           x="63.812607"
+           y="127.82621">Task 1</tspan></text>
+    </g>
+    <g
+       id="g61"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.28903,-77.779148)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect17"
+         width="32.083607"
+         height="10.60009"
+         x="54.772041"
+         y="141.02559" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="71.358696"
+         y="147.27962"
+         id="text17"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="71.358696"
+           y="147.27962"
+           id="tspan17">Task 2</tspan></text>
+    </g>
+    <g
+       id="g62"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.28903,-77.779148)">
+      <rect
+         style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect18"
+         width="32.083607"
+         height="18.686432"
+         x="54.772041"
+         y="152.58327" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.264582"
+         x="63.812607"
+         y="162.79883"
+         id="text18"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           id="tspan18"
+           style="text-align:start;text-anchor:start;stroke-width:0.264582"
+           x="63.812607"
+           y="162.79883">Task 1</tspan></text>
+    </g>
+    <g
+       id="g63"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.28903,-77.779148)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect19"
+         width="32.083607"
+         height="15.880966"
+         x="54.772041"
+         y="171.90761" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="71.358696"
+         y="180.62666"
+         id="text19"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="71.358696"
+           y="180.62666"
+           id="tspan19">Task 2</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.68867;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot)"
+       d="m -111.2432,-39.627565 c -0.55154,-0.550898 0,77.015433 0,77.015433"
+       id="path19"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.68867;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot)"
+       d="m -131.87023,-39.627565 c -0.55154,-0.550898 0,77.015433 0,77.015433"
+       id="path20" />
+    <g
+       id="g22"
+       transform="matrix(0.56288944,0,0,0.47190147,-200.18418,-70.794238)"
+       style="stroke-width:1.09216">
+      <rect
+         style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:1.09215;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect20"
+         width="32.083607"
+         height="108.636"
+         x="105.32122"
+         y="79.916191" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.288966"
+         x="114.62769"
+         y="89.280777"
+         id="text21"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           id="tspan21"
+           style="text-align:start;text-anchor:start;stroke-width:0.288966"
+           x="114.62769"
+           y="89.280777">Task 1</tspan></text>
+    </g>
+    <g
+       id="g23"
+       transform="matrix(0.56288944,0,0,0.56288944,-200.18418,-78.065658)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect21"
+         width="32.083607"
+         height="108.636"
+         x="143.30215"
+         y="79.875839" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="160.35451"
+         y="89.240639"
+         id="text22"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="160.35451"
+           y="89.240639"
+           id="tspan22">Task 2</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:4.36864px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.148931"
+       x="-74.518814"
+       y="-57.612591"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="stroke-width:0.148931"
+         x="-74.518814"
+         y="-57.612591">Concurrencia</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.148931"
+         x="-74.518814"
+         y="-52.151791"
+         id="tspan10">y Paralelismo</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.68867;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot)"
+       d="m -85.317112,-39.627563 c -0.55153,-0.550899 0,77.015431 0,77.015431"
+       id="path24" />
+    <g
+       id="g41"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.71493,-78.638668)">
+      <rect
+         style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect24"
+         width="32.083607"
+         height="16.21102"
+         x="190.74452"
+         y="80.170685" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.264582"
+         x="200.50035"
+         y="89.533936"
+         id="text24"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           id="tspan24"
+           style="text-align:start;text-anchor:start;stroke-width:0.264582"
+           x="200.50035"
+           y="89.533936">Task 1</tspan></text>
+    </g>
+    <g
+       id="g42"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.71493,-78.638668)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect25"
+         width="32.083607"
+         height="16.21102"
+         x="190.74452"
+         y="97.436256" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="208.04645"
+         y="106.70917"
+         id="text25"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="208.04645"
+           y="106.70917"
+           id="tspan25">Task 2</tspan></text>
+    </g>
+    <g
+       id="g43"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.71493,-78.638668)">
+      <rect
+         style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect26"
+         width="32.083607"
+         height="26.607744"
+         x="190.74452"
+         y="114.48402" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.264582"
+         x="200.50035"
+         y="128.83888"
+         id="text26"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           id="tspan26"
+           style="text-align:start;text-anchor:start;stroke-width:0.264582"
+           x="200.50035"
+           y="128.83888">Task 1</tspan></text>
+    </g>
+    <g
+       id="g44"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.71493,-78.638668)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect27"
+         width="32.083607"
+         height="10.60009"
+         x="190.74452"
+         y="142.04358" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="208.04645"
+         y="148.29228"
+         id="text27"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="208.04645"
+           y="148.29228"
+           id="tspan27">Task 2</tspan></text>
+    </g>
+    <g
+       id="g45"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.71493,-78.638668)">
+      <rect
+         style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect28"
+         width="32.083607"
+         height="18.686432"
+         x="190.74452"
+         y="153.60126" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.264582"
+         x="200.50035"
+         y="163.81149"
+         id="text28"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           id="tspan28"
+           style="text-align:start;text-anchor:start;stroke-width:0.264582"
+           x="200.50035"
+           y="163.81149">Task 1</tspan></text>
+    </g>
+    <g
+       id="g46"
+       transform="matrix(0.56288944,0,0,0.56288944,-201.71493,-78.638668)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect29"
+         width="32.083607"
+         height="15.880966"
+         x="190.74452"
+         y="172.9256" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="208.04645"
+         y="181.63933"
+         id="text29"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="208.04645"
+           y="181.63933"
+           id="tspan29">Task 2</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.68867;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot)"
+       d="m -63.938052,-39.627566 c -0.55153,-0.550898 0,77.015434 0,77.015434"
+       id="path29" />
+    <g
+       id="g36"
+       transform="matrix(0.56288944,0,0,0.56288944,-202.11057,-74.215528)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect31"
+         width="32.083607"
+         height="16.21102"
+         x="229.42833"
+         y="98.454247" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="246.93373"
+         y="107.72184"
+         id="text31"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="246.93373"
+           y="107.72184"
+           id="tspan31">Task 2</tspan></text>
+    </g>
+    <g
+       id="g37"
+       transform="matrix(0.56288944,0,0,0.56288944,-202.11057,-99.099318)">
+      <rect
+         style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect32"
+         width="32.083607"
+         height="26.607744"
+         x="229.42833"
+         y="115.50201" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.264582"
+         x="239.38765"
+         y="129.85155"
+         id="text32"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           id="tspan32"
+           style="text-align:start;text-anchor:start;stroke-width:0.264582"
+           x="239.38765"
+           y="129.85155">Task 1</tspan></text>
+    </g>
+    <g
+       id="g38"
+       transform="matrix(0.56288944,0,0,0.56288944,-202.11057,-72.956588)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect33"
+         width="32.083607"
+         height="10.60009"
+         x="229.42833"
+         y="143.06158" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="246.93373"
+         y="149.30495"
+         id="text33"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="246.93373"
+           y="149.30495"
+           id="tspan33">Task 2</tspan></text>
+    </g>
+    <rect
+       style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:0.562883;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect34"
+       width="18.059523"
+       height="15.245798"
+       x="-72.967819"
+       y="-8.8200035" />
+    <g
+       id="g40"
+       transform="matrix(0.56288944,0,0,0.56288944,-202.11057,-79.211698)">
+      <rect
+         style="fill:#5fbcd3;fill-opacity:1;stroke:none;stroke-width:0.999991;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect35"
+         width="32.083607"
+         height="15.880966"
+         x="229.42833"
+         y="173.9436" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.264582"
+         x="246.93373"
+         y="182.65199"
+         id="text35"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264582"
+           x="246.93373"
+           y="182.65199"
+           id="tspan35">Task 2</tspan></text>
+    </g>
+    <g
+       id="g47"
+       transform="matrix(0.56288944,0,0,0.56288944,-202.11057,-70.275828)">
+      <rect
+         style="fill:#bcd35f;fill-opacity:1;stroke:none;stroke-width:0.999989;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect46"
+         width="32.083607"
+         height="7.2339892"
+         x="229.42833"
+         y="150.1967" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.00628px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.264582"
+         x="239.38765"
+         y="154.7285"
+         id="text46"
+         transform="scale(0.99476713,1.0052604)"><tspan
+           sodipodi:role="line"
+           id="tspan46"
+           style="text-align:start;text-anchor:start;stroke-width:0.264582"
+           x="239.38765"
+           y="154.7285">Task 1</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:2.81798px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:start;text-anchor:start;stroke-width:0.14893"
+       x="-68.42498"
+       y="-0.22287969"
+       id="text48"
+       transform="scale(0.99476713,1.0052604)"><tspan
+         sodipodi:role="line"
+         id="tspan48"
+         style="text-align:start;text-anchor:start;stroke-width:0.14893"
+         x="-68.42498"
+         y="-0.22287969">Task 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="-161.49602"
+       y="-44.221622"
+       id="text63"><tspan
+         sodipodi:role="line"
+         id="tspan63"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="-161.49602"
+         y="-44.221622">Core 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="-85.205482"
+       y="-44.221622"
+       id="text64"><tspan
+         sodipodi:role="line"
+         id="tspan64"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="-85.205482"
+         y="-44.221622">Core 1</tspan></text>
+    <g
+       id="g69"
+       transform="translate(-228.27714,-74.422638)">
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="96.518532"
+         y="30.201017"
+         id="text65"><tspan
+           sodipodi:role="line"
+           id="tspan65"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+           x="96.518532"
+           y="30.201017">Core 1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="117.03291"
+         y="30.201017"
+         id="text66"><tspan
+           sodipodi:role="line"
+           id="tspan66"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+           x="117.03291"
+           y="30.201017">Core 2</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="-63.939079"
+       y="-44.221622"
+       id="text67"><tspan
+         sodipodi:role="line"
+         id="tspan67"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Italic';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="-63.939079"
+         y="-44.221622">Core 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.36864px;line-height:1.25;font-family:'FantasqueSansM Nerd Font Propo';-inkscape-font-specification:'FantasqueSansM Nerd Font Propo, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;stroke-width:0.148931"
+       x="-121.39161"
+       y="-57.612591"
+       id="text69"><tspan
+         sodipodi:role="line"
+         id="tspan68"
+         style="stroke-width:0.148931"
+         x="-121.39161"
+         y="-57.612591">Concurrencia</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.148931"
+         x="-121.39161"
+         y="-52.151791"
+         id="tspan69">y Paralelismo</tspan></text>
+  </g>
+</svg>
