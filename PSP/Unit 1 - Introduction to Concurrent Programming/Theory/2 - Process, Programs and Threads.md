@@ -20,7 +20,9 @@ A **program** is a sequence of instructions written to perform a specified task 
 
 A program can be seen as a black box. The instructions of the program will tell to the system how to obtain the desired output from the given input.
 
-A **process**, on the other hand, is what you get when you run a program. Ie. a **process** is an instance of a program that is being executed. It is an active entity, meaning it performs actions when it is running. A process has its own memory space, system resources, and execution context.
+A **process**, on the other hand, is what you get when you run a program. Ie. a **process** is an instance of a program that is being executed. It is an active entity, meaning it performs actions when it is running. A process has its own memory space, system resources, and execution context. All the information about the process that the OS needs to manage it is stored in an structure called PCB (Process Control Block)
+
+![PCB](C:\Users\asinc\Documents\Trabajo\IES San Clemente\Curso-2025-2026\PSP\Unit 1 - Introduction to Concurrent Programming\Theory\Images\PCB.svg)
 
 Every time you run a program the system starts a new process. Each process is independent and isolated from other processes, which means that they do **not share memory or resources** unless explicitly designed to do so.
 
@@ -33,6 +35,15 @@ A **thread** is the smallest unit of execution within a process. A process can h
 For two task (or processes) to be concurrent, one task should start before the other finishes. This means that the tasks can **overlap in time**, but they **do not have to be executing at the same time**.
 
 On the other hand, **parallel** programming means that **multiple tasks are executing at the same time**. This requires multiple processors or cores to be available, as each task needs its own dedicated resources to run simultaneously.
+
+We can say that to achieve concurrency we can follow two paths:
+
+* Through **multiprogramming**: The OS slices the CPU time and assigns those lime slices to the processes. When a process reach it's time limit the OS remove the process from the CPU and gives time to another process. This way, **over a period of time** the user can see that there are may task running **at the same time**. We don't need more than one CPU to achieve this.
+* Through **multiprocessing**: To implement this system we need to have more than one CPU (or cores). The OS sends as many process as it can to as many CPUs (or cores) the system have. So we can literally say that there are more than one process running **at the same time** at any given moment.
+
+Obviously the OS combines both approaches to get the benefits of both techniques:
+
+![Concurrency and parallelism](C:\Users\asinc\Documents\Trabajo\IES San Clemente\Curso-2025-2026\PSP\Unit 1 - Introduction to Concurrent Programming\Theory\Images\concurrency.svg)
 
 **Every time we have parallelism, we have concurrency, but not every time we have concurrency we have parallelism.**
 
@@ -90,11 +101,15 @@ Every instruction is executed one after the other, and the process can only do o
 
 If we focus on the code that defines a single-threaded process, we can see that it is relatively simple. The code is executed in a linear fashion, and there are no concerns about synchronization or communication between threads. This means that it's easier to test for correctness, as there are fewer variables to consider. If the code is simple enough, we can use [_white box testing_](https://en.wikipedia.org/wiki/White-box_testing) techniques to ensure that the code behaves as expected.
 
+![Single-threaded process](C:\Users\asinc\Documents\Trabajo\IES San Clemente\Curso-2025-2026\PSP\Unit 1 - Introduction to Concurrent Programming\Theory\Images\sequential_flowchart.png)
+
 ### Multi-threaded process
 
 In a multi-threaded process, there are multiple threads of execution that can run concurrently. Each thread has its own flow of execution, and they can execute instructions independently of each other. This means that the process can do multiple things at the same time. We can see this as a process composed by multiple single-threaded processes that share the same memory space and resources. Each of this _mini-processes_ will be known as a thread.
 
 In this kind of programs there is the need to implement **mechanisms for synchronization and communication** between threads. Will be times when two threads will need to access the same resource, memory for example, and we need to ensure that this access is done in a safe way to avoid data corruption. Other times one thread will need to wait for another thread to complete a task before it can continue its execution and we need that thread to be able to notify the waiting thread when it has completed the task.
+
+![Multi-threaded process](C:\Users\asinc\Documents\Trabajo\IES San Clemente\Curso-2025-2026\PSP\Unit 1 - Introduction to Concurrent Programming\Theory\Images\concurrent_flowchart.png)
 
 Multi-threaded processes lead to indeterminism as, for the same input, the program can give different outputs depending on the order in which the threads are executed. This makes it harder to test for correctness, as there are more variables to consider. That the output can change depending on the order of execution of the threads does not mean that the program is incorrect, but it does mean that we need to be more careful when testing it.
 
@@ -137,3 +152,11 @@ A service is a process which runs in the background and performs a specific task
 Services do not usually interact directly with the user, but they can provide functionality that is used by other processes or applications. For example, a web server is a service that provides web pages to users when they request them via a web browser.
 
 ### Threads vs processes
+
+The main difference between a process and a thread is that the first is managed by the OS while the second is managed by it's parent process.
+
+The OS is responsible of spawn new processes. And then it will assign them time and resources, control the communication between processes, etc.
+
+The entity responsible to spawn new threads is a process. With threads is the parent process the entity in charge to manage the threads: synchronization, communication, etc.
+
+With independence of this arrangement the OS can send different threads to different CPUs / cores.

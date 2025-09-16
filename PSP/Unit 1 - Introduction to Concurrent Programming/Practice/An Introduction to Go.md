@@ -364,3 +364,24 @@ modify(&a)
 
 fmt.Println(a) // 20
 ```
+
+#### Function parameters vs function arguments
+
+**Function parameters** are the variables listed in a function’s definition.  
+**Function arguments** are the actual values passed to the function when it is called.
+
+In the following code `x` and `y` are function parameters:
+
+```Go
+func add(x int, y int) int {
+    return x + y
+}
+```
+
+And here `a` and `b` are function (invocation) arguments:
+
+```go
+a, b := 10, 20
+
+z := add(a, b)
+```

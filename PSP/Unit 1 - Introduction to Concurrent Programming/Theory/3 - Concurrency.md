@@ -1,5 +1,7 @@
 # Concurrency
 
+[TOC]
+
 A definition of the word _concurrent_ from the Webster dictionary is:
 
 > converging, meeting, intersecting, **running together** at one point.
