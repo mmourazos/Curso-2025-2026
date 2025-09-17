@@ -101,3 +101,4 @@ vim.o.shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode"
 vim.o.shellquote = ""
 vim.o.shellxquote = ""
 ```
+
